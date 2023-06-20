@@ -2,8 +2,7 @@
 
 ## Egna reflektioner
 Jag uppskattar att denna utmaning har tydliga instruktioner så att man vet vad som förväntas av en.
-Den verkar dock väldigt stor och tidskrävande och jag vet inte riktigt hur jag ska börja.
-Jag brukar oftast bara börja med att koda lite och vart efter får jag en mer tydlig bild över vad jag behöver göra.
+Den verkar dock väldigt stor och tidskrävande och jag vet inte riktigt hur jag ska börja. Men det känns ändå roligt på grund av tydligheten.
 
 
 ## Projektet
@@ -32,6 +31,8 @@ Jag ska i alla fall använda mig av MongoDB och det lär ju då finnas en klass 
 #### Diagram.(exempelvis)
 
 ### Jira/Trello/Github Project och projekthantering enligt Scrum/Kanban
+Jag har skapat ett projekt på Github som heter TodoApp. Där finns en todo-lista med alla uppgifter som ska göras.
+Den har dock fyllts på kontinuerligt under projektets gång då jag inte hade en tydlig bild över allt som behövdes göras från början.
 
 ## Arbetet och dess genomförande
 
