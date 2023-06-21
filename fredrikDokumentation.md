@@ -20,13 +20,14 @@ Alla att-göra-uppgifterna ska ha ett id, en information om den är utförd elle
 
 #### Hur du tänker försöka lösa uppgiften.(exempelvis)
 Jag har svårt för att börja med projekt. Jag brukar behöver börja med att skapa lite klasser och koda lite smått för att
-få en tydligare bild över vad jag behöver göra.
+få en tydligare bild över vad jag behöver göra. Så jag vet inte riktigt hur jag ska förklara hur jag tänker lösa denna uppgift.
 
 Jag vet åtminstone att jag ska ha en klass som heter Todo där egenskaperna för varje todo finns.
 Men vilka ytterligare klasser som behövs vet jag inte riktigt än. Jag vet inte på rak arm hur man gör när man ska kommunicera med databasen.
 Jag måste gå igenom mina anteckningar och söka runt lite på nätet.
 
 Jag ska i alla fall använda mig av MongoDB och det lär ju då finnas en klass som kommunicerar med databasen.
+Och kanske en klass för att läsa nyckeln.
 
 #### Diagram.(exempelvis)
 
