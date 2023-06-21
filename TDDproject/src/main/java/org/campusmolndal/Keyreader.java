@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Keyreader {
     public static String readConnectionString() {
-        return "mongodb://localhost:27017";
+        return "mongodb+srv://user1:Sommar23@cluster0.ctjpebk.mongodb.net/";
+        //return "mongodb://localhost:27017";
     }
 }
