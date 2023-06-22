@@ -2,15 +2,14 @@ package org.campusmolndal;
 
 public class Todo {
 
-    // Statisk variabel för att hålla reda på det nästa tillgängliga ID:t
     private static int nextId = 1;
     private int id;
     private String text;
     private boolean done;
 
-//Konstruktor som skapar ett nytt Todo-objekt med ett unikt ID
+//Konstruktor som skapar ett nytt Todo-objekt
     public Todo(String text, boolean done) {
-        this.id = nextId;
+        this.id = nextId++;
         this.text = text;
         this.done = done;
     }

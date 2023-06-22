@@ -10,9 +10,9 @@ public class MongoDBFacade {
     private MongoDatabase database;
 
     //Konstruktor som skapar en anslutning till databasen
-    public MongoDBFacade(String databaseName) {
+    public MongoDBFacade() {
         mongoClient = MongoClients.create(connectionString);
-        database = mongoClient.getDatabase(databaseName);
+        database = mongoClient.getDatabase("TODO");
     }
 
     //Metod som lägger till ett nytt dokument i samlingen
@@ -45,7 +45,6 @@ public class MongoDBFacade {
             return todo;
         }
         else {
-            System.out.println("No document found with this ID");
             return null;
         }
     }
