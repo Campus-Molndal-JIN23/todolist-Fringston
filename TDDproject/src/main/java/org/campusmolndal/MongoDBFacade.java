@@ -10,8 +10,7 @@ public class MongoDBFacade {
     private MongoDatabase database;
 
     //Konstruktor som skapar en anslutning till databasen
-    public MongoDBFacade(String connectionString, String databaseName) {
-        this.connectionString = connectionString;
+    public MongoDBFacade(String databaseName) {
         mongoClient = MongoClients.create(connectionString);
         database = mongoClient.getDatabase(databaseName);
     }
@@ -40,8 +39,7 @@ public class MongoDBFacade {
         Document query = new Document("id", id);
         Document result = collection.find(query).first();
         if (result != null) {
-            Todo todo = new Todo(result.getInteger("id"),
-                    result.getString("text"),
+            Todo todo = new Todo(result.getString("text"),
                     result.getBoolean("done"));
             System.out.println("\nDocument " + id + " found:" + "\nTo do: " + todo.getText() + "\nDone: " + todo.isDone());
             return todo;
