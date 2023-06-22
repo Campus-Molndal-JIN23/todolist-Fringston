@@ -16,7 +16,7 @@ public class MongoDBFacade {
         database = mongoClient.getDatabase(databaseName);
     }
 
-    //Metod som lägger till ett dokument i en samling
+    //Metod som lägger till ett nytt dokument i samlingen
     public void insertTodo(Todo todo) {
         MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document document = new Document("id", todo.getId())
@@ -25,16 +25,17 @@ public class MongoDBFacade {
         collection.insertOne(document);
     }
 
-    //Metod som hämtar ett specifikt dokument från en samling
-    public Todo findTodoById(int id, String collectionName) {
-        MongoCollection<Document> collection = database.getCollection(collectionName);
+
+    //Metod som hämtar och visar ett specifikt dokument från samlingen
+    public Todo findTodoById(int id) {
+        MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document query = new Document("id", id);
         Document result = collection.find(query).first();
         if (result != null) {
             Todo todo = new Todo(result.getInteger("id"),
                     result.getString("text"),
                     result.getBoolean("done"));
-            System.out.println("Document found:" + "\nTo do: " + todo.getText() + "\nDone: " + todo.isDone());
+            System.out.println("\nDocument " + id + " found:" + "\nTo do: " + todo.getText() + "\nDone: " + todo.isDone());
             return todo;
         }
         else {
@@ -43,8 +44,8 @@ public class MongoDBFacade {
         }
     }
 
-    //Metod som uppdaterar ett dokument
-    public void updateTodo( int id, String text, boolean done) {
+    //Metod som uppdaterar ett dokument i samlingen
+    public void updateTodoByID(int id, String text, boolean done) {
         MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document query = new Document("id", id);
         Document updatedDocument = new Document("id", id)
@@ -53,7 +54,7 @@ public class MongoDBFacade {
         collection.updateOne(query, new Document("$set", updatedDocument));
     }
 
-    //Metod som tar bort ett dokument från en samling
+    //Metod som tar bort ett dokument från samlingen
     public void deleteTodoById(int id) {
         MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document query = new Document("id", id);
@@ -64,7 +65,6 @@ public class MongoDBFacade {
     public void printCollection() {
         MongoCollection<Document> collection = database.getCollection("Cluster0");
         FindIterable<Document> documents = collection.find();
-
         for (Document document : documents) {
             System.out.println(document.toJson());
         }

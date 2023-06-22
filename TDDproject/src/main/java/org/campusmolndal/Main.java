@@ -13,7 +13,6 @@ public class Main {
     public static void main(String[] args) {
         Keyreader keyreader = new Keyreader();
         String connectionString = keyreader.readConnectionString();
-
         MongoDBFacade mongoDBFacade = new MongoDBFacade(connectionString, "TODO");
 
         Todo todo1 = new Todo(1, "Buy milk", false);
@@ -27,7 +26,7 @@ public class Main {
         Todo todo9 = new Todo (9, "Buy beans", false);
         Todo todo10 = new Todo (10, "Buy tomatoes", false);
 
-        mongoDBFacade.printCollection();
+
 
     }
 }
