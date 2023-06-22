@@ -28,12 +28,14 @@ public class MongoDBFacade {
         Document query = new Document("id", id);
         Document result = collection.find(query).first();
         if (result != null) {
-            return new Todo(result.getInteger("id"),
+            Todo todo = new Todo(result.getInteger("id"),
                     result.getString("text"),
                     result.getBoolean("done"));
-            System.out.println(result.toJson());
+            System.out.println("Document found:" + "\nTo do: " + todo.getText() + "\nDone: " + todo.isDone());
+            return todo;
         }
         else {
+            System.out.println("No document found with this ID");
             return null;
         }
     }

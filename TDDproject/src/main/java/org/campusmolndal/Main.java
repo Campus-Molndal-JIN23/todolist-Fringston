@@ -20,6 +20,8 @@ public class Main {
         Todo todo2 = new Todo (2, "Buy bread", false);
         Todo todo3 = new Todo (3, "Buy butter", false);
         Todo todo4 = new Todo (4, "Buy cheese", false);
+
+        mongoDBFacade.findTodoById(5, "Cluster0");
     }
 }
 
