@@ -21,7 +21,8 @@ public class Main {
         Todo todo3 = new Todo (3, "Buy butter", false);
         Todo todo4 = new Todo (4, "Buy cheese", false);
 
-        mongoDBFacade.findTodoById(5, "Cluster0");
+        mongoDBFacade.insertTodo(todo1, "Cluster0");
+        mongoDBFacade.updateTodo("Cluster0", 1, "Buy milk", true);
     }
 }
 

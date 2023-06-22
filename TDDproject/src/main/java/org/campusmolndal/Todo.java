@@ -5,6 +5,7 @@ public class Todo {
     private String text;
     private boolean done;
 
+    //ID numret måste vara unikt för varje dokument....
     public Todo(int id, String text, boolean done) {
         this.id = id;
         this.text = text;
