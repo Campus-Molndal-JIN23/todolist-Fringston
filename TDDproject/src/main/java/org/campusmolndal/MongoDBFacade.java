@@ -1,7 +1,6 @@
 package org.campusmolndal;
 import com.mongodb.client.*;
 import org.bson.Document;
-
 import java.util.Collection;
 
 public class MongoDBFacade {
@@ -18,8 +17,8 @@ public class MongoDBFacade {
     }
 
     //Metod som lägger till ett dokument i en samling
-    public void insertTodo(Todo todo, String collectionName) {
-        MongoCollection<Document> collection = database.getCollection(collectionName);
+    public void insertTodo(Todo todo) {
+        MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document document = new Document("id", todo.getId())
                 .append("text", todo.getText())
                 .append("done", todo.isDone());
@@ -45,8 +44,8 @@ public class MongoDBFacade {
     }
 
     //Metod som uppdaterar ett dokument
-    public void updateTodo(String collectionName, int id, String text, boolean done) {
-        MongoCollection<Document> collection = database.getCollection(collectionName);
+    public void updateTodo( int id, String text, boolean done) {
+        MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document query = new Document("id", id);
         Document updatedDocument = new Document("id", id)
                 .append("text", text)
@@ -55,15 +54,15 @@ public class MongoDBFacade {
     }
 
     //Metod som tar bort ett dokument från en samling
-    public void deleteTodoById(int id, String collectionName) {
-        MongoCollection<Document> collection = database.getCollection(collectionName);
+    public void deleteTodoById(int id) {
+        MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document query = new Document("id", id);
         collection.deleteOne(query);
     }
 
     //Metod som skriver ut alla dokument i en samling
-    public void printCollection(String collectionName) {
-        MongoCollection<Document> collection = database.getCollection(collectionName);
+    public void printCollection() {
+        MongoCollection<Document> collection = database.getCollection("Cluster0");
         FindIterable<Document> documents = collection.find();
 
         for (Document document : documents) {
