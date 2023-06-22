@@ -25,6 +25,14 @@ public class MongoDBFacade {
         collection.insertOne(document);
     }
 
+    //Metod som hämtar och visar alla dokument i samlingen
+    public void printCollection() {
+        MongoCollection<Document> collection = database.getCollection("Cluster0");
+        FindIterable<Document> documents = collection.find();
+        for (Document document : documents) {
+            System.out.println(document.toJson());
+        }
+    }
 
     //Metod som hämtar och visar ett specifikt dokument från samlingen
     public Todo findTodoById(int id) {
@@ -59,15 +67,6 @@ public class MongoDBFacade {
         MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document query = new Document("id", id);
         collection.deleteOne(query);
-    }
-
-    //Metod som skriver ut alla dokument i en samling
-    public void printCollection() {
-        MongoCollection<Document> collection = database.getCollection("Cluster0");
-        FindIterable<Document> documents = collection.find();
-        for (Document document : documents) {
-            System.out.println(document.toJson());
-        }
     }
 
     //Metod som stänger anslutningen till databasen
