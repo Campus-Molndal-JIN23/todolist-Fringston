@@ -11,10 +11,15 @@ package org.campusmolndal;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        Keyreader keyreader = new Keyreader();
+        String connectionString = keyreader.readConnectionString();
 
-       MongoDBFacade mongoDBFacade = new MongoDBFacade("mongodb+srv://user1:Sommar23@cluster0.ctjpebk.mongodb.net/", "TODO");
-       Todo todo1 = new Todo(1, "Buy milk", false);
-         mongoDBFacade.insertTodo(todo1, "Cluster0");
+        MongoDBFacade mongoDBFacade = new MongoDBFacade(connectionString, "TODO");
+
+        Todo todo1 = new Todo(1, "Buy milk", false);
+        Todo todo2 = new Todo (2, "Buy bread", false);
+        Todo todo3 = new Todo (3, "Buy butter", false);
+        Todo todo4 = new Todo (4, "Buy cheese", false);
     }
 }
 

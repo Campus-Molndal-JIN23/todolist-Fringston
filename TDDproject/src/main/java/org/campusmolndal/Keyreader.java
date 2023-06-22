@@ -5,8 +5,18 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Keyreader {
+
+    static String userHome = System.getProperty("user.home");
+
     public static String readConnectionString() {
-        return "mongodb+srv://user1:Sommar23@cluster0.ctjpebk.mongodb.net/";
-        //return "mongodb://localhost:27017";
+        try {
+            FileInputStream input = new FileInputStream(userHome + "/OneDrive/Dokument/Keys/TODOKEY.txt");
+            Scanner scanner = new Scanner(input);
+            String connectionString = scanner.nextLine();
+            scanner.close();
+            return connectionString;
+        } catch (FileNotFoundException e) {
+            return "mongodb://localhost:27017";
+        }
     }
 }

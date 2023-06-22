@@ -9,6 +9,7 @@ public class MongoDBFacade {
     private MongoDatabase database;
 
     public MongoDBFacade(String connectionString, String databaseName) {
+        this.connectionString = connectionString;
         mongoClient = MongoClients.create(connectionString);
         database = mongoClient.getDatabase(databaseName);
     }
@@ -21,6 +22,7 @@ public class MongoDBFacade {
         collection.insertOne(document);
     }
 
+    //Inte klar
     public Todo findTodoById(int id, String collectionName) {
         MongoCollection<Document> collection = database.getCollection(collectionName);
         Document query = new Document("id", id);
@@ -29,10 +31,14 @@ public class MongoDBFacade {
             return new Todo(result.getInteger("id"),
                     result.getString("text"),
                     result.getBoolean("done"));
+            System.out.println(result.toJson());
         }
-        return null;
+        else {
+            return null;
+        }
     }
 
+    //Inte klar
     public void updateTodoById(int id, Todo updatedTodo, String collectionName) {
         MongoCollection<Document> collection = database.getCollection(collectionName);
         Document query = new Document("id", id);
