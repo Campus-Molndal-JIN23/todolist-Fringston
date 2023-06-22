@@ -55,9 +55,21 @@ public class Menu {
     private void createTodo() {
         System.out.println("Enter Todo text: ");
         String text = scanner.nextLine();
-        System.out.println("Enter status (true/false): ");
-        String doneStr = scanner.nextLine();
-        boolean done = Boolean.parseBoolean(doneStr);
+        boolean done = false;
+        boolean validInput = false;
+        while (!validInput) {
+            System.out.println("Enter current status (true/false): ");
+            String doneString = scanner.nextLine().toLowerCase();
+            if (doneString.equals("true")) {
+                done = true;
+                validInput = true;
+            } else if (doneString.equals("false")) {
+                done = false;
+                validInput = true;
+            } else {
+                System.out.println("Invalid input. Please enter either 'true' or 'false'.");
+            }
+        }
         try {
             Todo todo = new Todo(text, done);
             mongoDBFacade.insertTodo(todo);
