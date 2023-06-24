@@ -1,7 +1,6 @@
 package org.campusmolndal;
 
 public class Todo {
-
     private static int nextId = 1;
     private int id;
     private String text;
