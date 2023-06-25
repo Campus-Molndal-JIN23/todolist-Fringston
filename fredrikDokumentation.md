@@ -66,15 +66,24 @@ Det blir ett bra tillfälle att gå igenom alla övningsuppgifter som finns på 
 
 
 ### Beskriv något som var besvärligt att få till
-Att generera ett unikt ID-nummer för varje to-do var väldigt svårt att få till. 
+Att generera ett unikt ID-nummer för varje to-do var väldigt svårt att få till. Jag har ännu inte löst det till 100.
+Det kan dock bli dubbletter om du startar om programmet.
+
+Att mocka testerna var också svårt. 
 
 ### Beskriv om du fått byta lösning och varför i sådana fall
 Först så förstod jag inte att man skulle ha en meny. Så jag skrev ut allt ifrån MongoDBFacade-klassen.
 Sedan ändrade jag detta och skrev ut det mesta från Menu-klassen.
 
-Lösningen för att försöka få till ett unikt ID-nummer
-
 ## Reflektion & Slutsatser
+Under sommaren behöver jag repetera allt vi gått igenom hittills.
+Jag har inte tränat tillräckligt mycket på bland annat databaser, API:er, TDD, Mockit och CI.
+
+När det är så många olika delar man inte har bra koll på så känns det övermäktigt och det blir bara stressigt.
+Det känns liksom för sent för att gå igenom saker i detalj när man redan har fått uppgiften. 
+Då kommer man inte bli klar i tid.
+
+Det blir då risk för att man söker efter lösningar på nätet, kollar på klasskompisars arbeten och kopierar in kod som man inte riktigt förstår.
 
 ### Vad gick bra
 
@@ -82,7 +91,6 @@ Lösningen för att försöka få till ett unikt ID-nummer
 
 ### Vad har du lärt dig
 Jag har inte lärt mig mycket. Arbetet var för stort för min kunskapsnivå och det blev bara stressigt och kontraproduktivt.
-
 
 Jag har dock fått en tydligare bild över vad jag behöver lära mig.
 
