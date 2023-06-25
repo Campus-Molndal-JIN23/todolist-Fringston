@@ -16,6 +16,7 @@ Att-göra-uppgifterna sparas i en MongoDB-databas.
 Allt detta görs via ett CLI (Command Line Interface).
 
 ### Vad du har gjort
+Eftersom detta var en enskild uppgift har jag gjort allt.
 
 ## Planering
 Det blev ingen bra planering inför detta projekt. 
@@ -46,18 +47,32 @@ Den har dock fyllts på kontinuerligt under projektets gång då jag inte hade e
 Jag började med att göra ToDo-klassen. Där skapade jag egenskaperna för varje todo.
 Sedan fokuserade jag på att skapa kopplingen med databasen i Keyreader-klassen och MongoDBFacade-klassen. 
 Jag fick det till slut att fungera med lite hjälp från Marcus.
-Sedan skapade jag metoderna i MongoDBFacade-klassen som kommunicerar med databasen.
+Sedan skapade jag metoderna i MongoDBFacade-klassen som skickar och hämtar data från databasen.
 
 Jag hade missat att en meny skulle finnas så det gjorde jag efter metoderna i MongoDBFacade-klassen var klara.
 
 
 ### Vad som varit svårt
+Det mesta var svårt med denna uppgift. Jag känner att jag inte har en bra uppfattning om hur man sätter ihop allt vi gått igenom.
+MongoDB-kopplingen, testerna, Mockito, CI. Allt detta var svårt.
+
+Jag känner att jag inte tränat tillräckligt mycket på detta och det blev en för stor uppgift.
+Jag blev frustrerad och kände mig bara stressad.
+
+Jag måste repetera under sommarlovet och koda mycket mera.
+Det blir ett bra tillfälle att gå igenom alla övningsuppgifter som finns på Github.
 
 ### Beskriv lite olika lösningar du gjort
 
+
 ### Beskriv något som var besvärligt att få till
+Att generera ett unikt ID-nummer för varje to-do var väldigt svårt att få till. 
 
 ### Beskriv om du fått byta lösning och varför i sådana fall
+Först så förstod jag inte att man skulle ha en meny. Så jag skrev ut allt ifrån MongoDBFacade-klassen.
+Sedan ändrade jag detta och skrev ut det mesta från Menu-klassen.
+
+Lösningen för att försöka få till ett unikt ID-nummer
 
 ## Reflektion & Slutsatser
 
@@ -66,7 +81,13 @@ Jag hade missat att en meny skulle finnas så det gjorde jag efter metoderna i M
 ### Vad gick dåligt
 
 ### Vad har du lärt dig
+Jag har inte lärt mig mycket. Arbetet var för stort för min kunskapsnivå och det blev bara stressigt och kontraproduktivt.
+
+
+Jag har dock fått en tydligare bild över vad jag behöver lära mig.
+
 
 ### Vad hade ni gjort annorlunda om ni gjort om projektet
+Pluggat mer under kursens gång.
 
 ### Vilka möjligheter ser du med de kunskaper du fått under kursen.

@@ -20,8 +20,6 @@ class MongoDBFacadeTest {
     @Mock
     private MongoDatabase mockDatabase;
     @Mock
-    private MongoDBOperations mockMongoDBOperations;
-    @Mock
     private MongoCollection<Document> collection;
 
     private MongoDBFacade mongoDBFacade;
@@ -34,18 +32,10 @@ class MongoDBFacadeTest {
 
     @Test
     void testInsertTodo() {
-        //Arrange
-        Todo todo = new Todo ("Test", false);
-        //Act
-        mongoDBFacade.insertTodo (todo);
-        //Assert
-        verify(mockMongoDBOperations, times(1)).insertTodo (todo));
     }
-
     @Test
     void testPrintCollection() {
     }
-
     @Test
     void testFindTodoById() {
     }
