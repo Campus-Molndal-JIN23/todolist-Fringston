@@ -85,6 +85,9 @@ Då kommer man inte bli klar i tid.
 
 Det blir då risk för att man söker efter lösningar på nätet, kollar på klasskompisars arbeten och kopierar in kod som man inte riktigt förstår.
 
+Jag kände att jag bara ville få klart projektet snabbt och skicka in det, så att jag sedan i lugn och ro kunde gå tillbaka och gå igenom sådant som jag inte förstår.
+Men detta blir ju egentligen helt omvänd ordning...
+
 ### Vad gick bra
 
 ### Vad gick dåligt
