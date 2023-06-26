@@ -89,12 +89,13 @@ Jag kände att jag bara ville få klart projektet snabbt och skicka in det, så 
 Men detta blir ju egentligen helt omvänd ordning...
 
 ### Vad gick bra
+Det går bättre och bättre att skriva dokumentationen och README.md för varje projekt jag gör.
+Det är kul!
 
 ### Vad gick dåligt
 
 ### Vad har du lärt dig
 Jag har inte lärt mig mycket. Arbetet var för stort för min kunskapsnivå och det blev bara stressigt och kontraproduktivt.
-
 Jag har dock fått en tydligare bild över vad jag behöver lära mig.
 
 
