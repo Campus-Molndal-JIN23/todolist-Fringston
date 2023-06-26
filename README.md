@@ -44,9 +44,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-* [Marcus Medina](https://github.com/marcusjobb)
+* [Marcus](https://github.com/marcusjobb)
+* [Jafar](https://github.com/Jafar-Hussein)
 * [chatGPT](https://chat.openai.com/)
-* Various other classmates
+* IntelliJ Copilot
 
 ## Dependencies
 * [junit jupiter 5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0)
@@ -55,7 +56,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 * [MongoDB Driver 4.9.1](https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync/)
 
 ## License
- [MIT License](https://choosealicense.com/licenses/mit/).
+ [MIT License](https://choosealicense.com/licenses/mit/)
 
 ---
 ## Tests

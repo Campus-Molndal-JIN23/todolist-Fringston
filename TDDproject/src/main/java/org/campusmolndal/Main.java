@@ -13,7 +13,6 @@ public class Main {
     public static void main(String[] args) {
 
         MongoDBFacade mongoDBFacade = new MongoDBFacade();
-
         Menu menu = new Menu(mongoDBFacade);
         menu.displayMenu();
 

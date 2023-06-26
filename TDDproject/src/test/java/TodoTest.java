@@ -36,12 +36,12 @@ class TodoTest {
 
     @Test
     public void testIsDone() {
-        Assertions.assertFalse(todo.isDone());
+        Assertions.assertFalse(todo.getDone());
     }
 
     @Test
     public void testSetDone() {
         todo.setDone(true);
-        Assertions.assertTrue(todo.isDone());
+        Assertions.assertTrue(todo.getDone());
     }
 }

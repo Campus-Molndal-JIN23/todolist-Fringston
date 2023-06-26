@@ -20,7 +20,7 @@ public class MongoDBFacade {
         MongoCollection<Document> collection = database.getCollection("Cluster0");
         Document document = new Document("id", todo.getId())
                 .append("text", todo.getText())
-                .append("done", todo.isDone());
+                .append("done", todo.getDone());
         collection.insertOne(document);
     }
 
@@ -41,7 +41,7 @@ public class MongoDBFacade {
         if (result != null) {
             Todo todo = new Todo(result.getString("text"),
                     result.getBoolean("done"));
-            System.out.println("\nDocument " + id + " found:" + "\nTo do: " + todo.getText() + "\nDone: " + todo.isDone());
+            System.out.println("\nDocument " + id + " found:" + "\nTo do: " + todo.getText() + "\nDone: " + todo.getDone());
             return todo;
         }
         else {

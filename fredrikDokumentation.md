@@ -37,11 +37,13 @@ Och kanske en klass för att läsa connectionsträngen.
 
 #### Diagram.(exempelvis)
 Jag skapade ett UML-diagram för att få en tydligare bild över hur jag ska lösa uppgiften. 
-Men jag visste inte på förhand vilka klasser och metoder som skulle behövas så det blev inte så detaljerat.
+Men jag visste inte på förhand vilka klasser och metoder som skulle behövas så det blev inte så detaljerat från början men har fyllts på kontinuerligt.
+![img.png](img.png)
 
 ### Jira/Trello/Github Project och projekthantering enligt Scrum/Kanban
-Jag har skapat ett projekt på Github som heter TodoApp. Där finns en todo-lista med alla uppgifter som ska göras.
-Den har dock fyllts på kontinuerligt under projektets gång då jag inte hade en tydlig bild över allt som behövdes göras från början.
+Jag skapade även ett projekt på Github som heter "To do project". Där finns en todo-lista med alla uppgifter som ska göras.
+Även denna har fyllts på kontinuerligt under projektets gång då jag inte hade en tydlig bild över allt som behövdes göras från början.
+[To do project](https://github.com/users/Fringston/projects/2/views/1?layout=board)
 
 ## Arbetet och dess genomförande
 Jag började med att göra ToDo-klassen. Där skapade jag egenskaperna för varje todo.
