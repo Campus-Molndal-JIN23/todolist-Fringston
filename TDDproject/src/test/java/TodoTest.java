@@ -14,7 +14,7 @@ class TodoTest {
 
     @Test
     public void testGetId() {
-        Assertions.assertEquals(1, todo.getId());
+        Assertions.assertEquals(2, todo.getId());
     }
 
     @Test
