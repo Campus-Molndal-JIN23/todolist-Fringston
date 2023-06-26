@@ -34,13 +34,11 @@ Follow the instructions and install MongoDB on your computer.
 ## Usage
 
 The application is used through the console.
+When the application is run, the user is presented with a menu with the following options:
 
+![img_1.png](img_1.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+The user then uses the number keys to select an option and continues to follow the instructions in the console.
 
 ## Credits
 
