@@ -2,10 +2,10 @@ package org.campusmolndal;
 import java.util.Scanner;
 
 public class Menu {
-    MongoDBFacade mongoDBFacade;
+    MongoDBHandler mongoDBFacade;
     Scanner scanner;
 
-    public Menu(MongoDBFacade mongoDBFacade) {
+    public Menu(MongoDBHandler mongoDBFacade) {
         this.mongoDBFacade = mongoDBFacade;
         this.scanner = new Scanner(System.in);
     }

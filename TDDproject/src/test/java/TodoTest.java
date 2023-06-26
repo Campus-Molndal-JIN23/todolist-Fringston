@@ -35,7 +35,7 @@ class TodoTest {
     }
 
     @Test
-    public void testIsDone() {
+    public void testGetDone() {
         Assertions.assertFalse(todo.getDone());
     }
 

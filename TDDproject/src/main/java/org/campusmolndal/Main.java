@@ -12,7 +12,7 @@ package org.campusmolndal;
 public class Main {
     public static void main(String[] args) {
 
-        MongoDBFacade mongoDBFacade = new MongoDBFacade();
+        MongoDBHandler mongoDBFacade = new MongoDBHandler();
         Menu menu = new Menu(mongoDBFacade);
         menu.displayMenu();
 

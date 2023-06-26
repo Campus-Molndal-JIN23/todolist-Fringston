@@ -1,16 +1,15 @@
 package org.campusmolndal;
 import com.mongodb.client.*;
 import org.bson.Document;
-import java.util.Collection;
 
-public class MongoDBFacade {
+public class MongoDBHandler {
 
     private String connectionString = Keyreader.readConnectionString();
     private MongoClient mongoClient;
     private MongoDatabase database;
 
     //Konstruktor som skapar en anslutning till databasen
-    public MongoDBFacade() {
+    public MongoDBHandler() {
         mongoClient = MongoClients.create(connectionString);
         database = mongoClient.getDatabase("TODO");
     }

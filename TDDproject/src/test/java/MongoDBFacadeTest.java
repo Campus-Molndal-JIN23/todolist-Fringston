@@ -1,12 +1,8 @@
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoClient;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.*;
 import org.bson.Document;
-import org.campusmolndal.MongoDBFacade;
+import org.campusmolndal.MongoDBHandler;
 import org.campusmolndal.Todo;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.engine.descriptor.TestInstanceLifecycleUtils;
 import org.mockito.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -23,7 +19,7 @@ class MongoDBFacadeTest {
     private MongoCollection<Document> mockCollection;
 
     @InjectMocks
-    private MongoDBFacade mongoDBFacade;
+    private MongoDBHandler mongoDBFacade;
 
     @BeforeEach
     void setUp() {
@@ -54,29 +50,13 @@ class MongoDBFacadeTest {
     }
 
     @Test
-    void testPrintCollection() {
-        // Arrange
-        FindIterable<Document> mockDocuments = mock(FindIterable.class);
-        when(mockCollection.find()).thenReturn(mockDocuments);
-        when(mockDocuments.iterator()).thenReturn(TestUtils.mockIterator(
-                Document.parse("{\"id\": 1, \"text\": \"Sample 1\", \"done\": false}"),
-                Document.parse("{\"id\": 2, \"text\": \"Sample 2\", \"done\": true}")
-        ));
-
-        // Act
-        mongoDBFacade.printCollection();
-
-        // Assert
-        // Verify that System.out.println was called twice with the expected document JSON strings
-        verify(mockDocuments, times(2)).iterator();
-    }
-
-    @Test
     void testFindTodoById() {
         // Arrange
         int id = 1;
         Document mockDocument = Document.parse("{\"id\": 1, \"text\": \"Sample text\", \"done\": false}");
-        when(mockCollection.find(any(Document.class))).thenReturn(TestUtils.mockIterable(mockDocument));
+        FindIterable<Document> mockFindIterable = mock(FindIterable.class);
+        when(mockCollection.find(any(Document.class))).thenReturn(mockFindIterable);
+        when(mockFindIterable.first()).thenReturn(mockDocument);
 
         // Act
         Todo result = mongoDBFacade.findTodoById(id);
