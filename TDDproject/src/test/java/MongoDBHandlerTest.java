@@ -19,7 +19,7 @@ class MongoDBFacadeTest {
     private MongoCollection<Document> mockCollection;
 
     @InjectMocks
-    private MongoDBHandler mongoDBFacade;
+    private MongoDBHandler mongoDBHandler;
 
     @BeforeEach
     void setUp() {
@@ -31,7 +31,7 @@ class MongoDBFacadeTest {
 
     @AfterEach
     void tearDown() {
-        mongoDBFacade.close();
+        mongoDBHandler.close();
     }
 
     @Test
@@ -43,7 +43,7 @@ class MongoDBFacadeTest {
         when(mockTodo.getDone()).thenReturn(false);
 
         // Act
-        mongoDBFacade.insertTodo(mockTodo);
+        mongoDBHandler.insertTodo(mockTodo);
 
         // Assert
         verify(mockCollection, times(1)).insertOne(any(Document.class));
@@ -59,7 +59,7 @@ class MongoDBFacadeTest {
         when(mockFindIterable.first()).thenReturn(mockDocument);
 
         // Act
-        Todo result = mongoDBFacade.findTodoById(id);
+        Todo result = mongoDBHandler.findTodoById(id);
 
         // Assert
         assertNotNull(result);
@@ -75,7 +75,7 @@ class MongoDBFacadeTest {
         boolean newDone = true;
 
         // Act
-        mongoDBFacade.updateTodoByID(id, newText, newDone);
+        mongoDBHandler.updateTodoByID(id, newText, newDone);
 
         // Assert
         Document expectedQuery = Document.parse("{\"id\": 1}");
@@ -89,7 +89,7 @@ class MongoDBFacadeTest {
         int id = 1;
 
         // Act
-        mongoDBFacade.deleteTodoById(id);
+        mongoDBHandler.deleteTodoById(id);
 
         // Assert
         Document expectedQuery = Document.parse("{\"id\": 1}");

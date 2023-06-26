@@ -60,5 +60,5 @@ The user then uses the number keys to select an option and continues to follow t
 ## Tests
 
 To run tests:
-Go to the folder named "test" and run the tests in the classes "ToDoTest" and "MongoDBFacadeTest".
+Go to the folder named "test" and run the tests in the classes "ToDoTest" and "MongoDBHandlerTest".
 
