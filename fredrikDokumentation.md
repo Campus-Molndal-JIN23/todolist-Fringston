@@ -43,6 +43,7 @@ Men jag visste inte på förhand vilka klasser och metoder som skulle behövas s
 ### Jira/Trello/Github Project och projekthantering enligt Scrum/Kanban
 Jag skapade även ett projekt på Github som heter "To do project". Där finns en to do-lista med alla uppgifter som ska göras.
 Även denna har fyllts på kontinuerligt under projektets gång då jag inte hade en tydlig bild över allt som behövdes göras från början.
+
 [To do project](https://github.com/orgs/Campus-Molndal-JIN23/projects/60)
 
 ## Arbetet och dess genomförande

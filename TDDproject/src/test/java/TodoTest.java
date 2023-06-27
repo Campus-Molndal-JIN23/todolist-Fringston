@@ -9,6 +9,7 @@ class TodoTest {
 
     @BeforeEach
     public void setup() {
+        Todo.resetNextId();
         todo = new Todo("Sample Todo", false);
     }
 

@@ -38,6 +38,10 @@ public class Todo {
         this.done = done;
     }
 
+    // Denna metod används för att återställa nextId till 1 för att testet testGetId ska fungera.
+    public static void resetNextId() {
+        nextId = 1;
+    }
     @Override
     public String toString() {
         return "ID: " + id + ", Text: " + text + ", Done: " + done;
