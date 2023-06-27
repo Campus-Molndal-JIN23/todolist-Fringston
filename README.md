@@ -23,9 +23,6 @@ The program can manage CRUD operations on the database.
 I learned that a seemingly simple project can be very difficult to implement. 
 I also learned how GitHub CI works and how to use Mockito with MongoDB.
 
-## Javaversion
-JDK 19.0.1
-
 ## Installation
 
 - Download MongoDB from https://www.mongodb.com/try/download/community. 
@@ -44,14 +41,8 @@ When the application is run, the user is presented with a menu with the followin
 
 The user then uses the number keys to select an option and continues to follow the instructions in the console.
 
-## Credits
-Received help from:
-* [Marcus](https://github.com/marcusjobb)
-* [chatGPT](https://chat.openai.com/)
-* IntelliJ Copilot
-
-Project tested by:
-* [Jafar](https://github.com/Jafar-Hussein)
+## Javaversion
+JDK 19.0.1
 
 ## Dependencies
 * [junit jupiter 5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0)
@@ -61,6 +52,15 @@ Project tested by:
 
 ## License
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
+
+## Credits
+Received help from:
+* [Marcus](https://github.com/marcusjobb)
+* [chatGPT](https://chat.openai.com/)
+* IntelliJ Copilot
+
+Project tested by:
+* [Jafar](https://github.com/Jafar-Hussein)
 
 ---
 ## Tests
