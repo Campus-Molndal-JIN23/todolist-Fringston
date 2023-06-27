@@ -11,7 +11,7 @@ I also wanted to do a project with a MongoDB database.
 
 - Why did you build this project?
 
-I built this project to help people keep track of their tasks.
+I built this project to help people keep track of their tasks and also to practice TDD, MongoDB, Mockito, and GitHub CI.
 
 - What problem does it solve?
 
@@ -20,7 +20,11 @@ The program can manage CRUD operations on the database.
 
 - What did you learn?
 
-I learned that a seemingly simple project can be very difficult to implement.
+I learned that a seemingly simple project can be very difficult to implement. 
+I also learned how GitHub CI works and how to use Mockito with MongoDB.
+
+## Javaversion
+JDK 19.0.1
 
 ## Installation
 
@@ -56,11 +60,12 @@ Project tested by:
 * [MongoDB Driver 4.9.1](https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync/)
 
 ## License
- [MIT License](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
 
 ---
 ## Tests
 
 To run tests:
-Go to the folder named "test" and run the tests in the classes "ToDoTest" and "MongoDBHandlerTest".
+* Open the project in IntelliJ or your preferred IDE. 
+* Go to the folder named "test" and run the tests in the classes "TodoTest" and "MongoDBHandlerTest".
 

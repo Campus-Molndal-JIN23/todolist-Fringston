@@ -1,8 +1,16 @@
 # Fredrik Rinstad
 
 ## Egna reflektioner
-Jag uppskattar att denna utmaning har tydliga instruktioner så att man vet vad som förväntas av en.
-Den verkar dock väldigt stor och tidskrävande och jag vet inte riktigt hur jag ska börja. Men det känns ändå roligt på grund av tydligheten.
+Jag uppskattar att denna utmaning hade tydliga instruktioner så att man vet vad som förväntas av en.
+
+Det var en väldigt stor och tidskrävande uppgift för mig. Jag fastnade och behövde ta hjälp flera gånger för att komma vidare.
+En sak som ofta är frustrerande för mig är när jag fastnar, söker hjälp och får olika lösningsförslag beroende på vart jag vänder mig.
+Jag vet att det alltid finns flera olika sätt att göra saker på inom programmering, men jag saknar ändå ibland det "rätta svaret".
+
+Jag behöver träna mer på att tänka ut vilka tester som behövs för mitt program, att mocka tester, att skapa databaser, koppla mig till databaser och kommunicera med databaser.
+
+Men det var roligt att jag till slut fick ihop det (med lite hjälp) och hann lämna in arbetet i tid.
+Och även om jag behöver träna mer på vissa saker så känner jag att det går framåt och att min förståelse generellt ökar.
 
 ## Projektet
 
@@ -15,7 +23,7 @@ Att-göra-uppgifterna sparas i en MongoDB-databas.
 Allt detta görs via ett CLI (Command Line Interface).
 
 ### Vad du har gjort
-Eftersom detta var en enskild uppgift har jag gjort allt. Skapat klasser, metoder och tester. 
+Eftersom detta var en enskild uppgift har jag gjort allt; klasser, metoder och tester. 
 Jag har även skapat en databas i MongoDB och automatiska CI-tester i GitHub Actions.
 
 ## Planering
@@ -25,8 +33,9 @@ Jag visste helt enkelt inte hur jag skulle göra så jag var tvungen att börja 
 ### Lösningsförslag innan uppgiften påbörjas
 
 #### Hur du tänker försöka lösa uppgiften.(exempelvis)
-Jag har svårt för att börja med projekt. Jag brukar behöver börja med att skapa lite klasser och koda lite smått för att
-få en tydligare bild över vad jag behöver göra. Så jag vet inte riktigt hur jag ska förklara hur jag tänker lösa denna uppgift.
+Jag har ofta svårt för hur jag ska börja med projekt. 
+Jag brukar behöver börja med att skapa några klasser och koda lite smått för att få en tydligare bild över vad jag behöver göra. 
+Så jag vet inte riktigt hur jag ska förklara hur jag tänker lösa denna uppgift.
 
 Jag vet åtminstone att jag ska ha en klass som heter Todo där egenskaperna för varje todo finns.
 Men vilka ytterligare klasser som behövs vet jag inte riktigt än. Jag vet inte på rak arm hur man gör när man ska kommunicera med databasen.
@@ -38,10 +47,10 @@ Och kanske en klass för att läsa connectionsträngen.
 #### Diagram.(exempelvis)
 Jag skapade ett UML-diagram för att få en tydligare bild över hur jag ska lösa uppgiften. 
 Men jag visste inte på förhand vilka klasser och metoder som skulle behövas så det blev inte så detaljerat från början men har fyllts på kontinuerligt.
-![img.png](img.png)
+![img_2.png](img_2.png)
 
 ### Jira/Trello/Github Project och projekthantering enligt Scrum/Kanban
-Jag skapade även ett projekt på Github som heter "To do project". Där finns en to do-lista med alla uppgifter som ska göras.
+Jag skapade även en to-do/KanBan-board på Github som heter "To do project". Där finns alla klasser som ska göras och vad de ska innehålla för metoder.
 Även denna har fyllts på kontinuerligt under projektets gång då jag inte hade en tydlig bild över allt som behövdes göras från början.
 
 [To do project](https://github.com/orgs/Campus-Molndal-JIN23/projects/60)
@@ -58,16 +67,20 @@ Mitt arbete med detta projekt var inte så välorganiserat.
 Jag fick flera gånger ta hjälp från Marcus, klasskamrater, chatGPT och IntelliJ's copilot.
 
 ### Vad som varit svårt
-Det mesta var svårt med denna uppgift. Jag känner att jag inte har en bra uppfattning om hur man sätter ihop allt vi gått igenom.
+Mycket var svårt med denna uppgift. Jag känner att jag inte har en bra uppfattning om hur man sätter ihop allt vi gått igenom.
 MongoDB-kopplingen, testerna, Mockito, CI. Allt detta var svårt.
 
 Jag känner att jag inte tränat tillräckligt mycket på detta och det blev en för stor uppgift för mig.
-Jag blev frustrerad och kände mig stressad.
+Jag blev frustrerad och kände mig stressad vid många tillfällen.
 
 Jag måste repetera under sommarlovet och koda mycket mer.
 Det blir ett bra tillfälle att gå igenom alla övningsuppgifter som finns på Github.
 
 ### Beskriv lite olika lösningar du gjort
+
+- Jag har gjort en switch sats i Menu-klassen som skriver ut olika alternativ och sedan kallar på olika metoder i MongoDBHandler-klassen beroende på vad användaren väljer.
+- Jag har skapat en metod ska heter resetNextId() som jag kallar på i BeforeEach i TestTodo-klassen för att återställa id:et till 1.
+Detta gjorde jag för att testet testGetId skulle fungera på GitHub Actions. Innan dess så fungerade testet i IntelliJ men inte på GitHub Actions.
 
 
 ### Beskriv något som var besvärligt att få till
@@ -86,16 +99,18 @@ Under sommaren behöver jag repetera allt vi gått igenom hittills.
 Jag har inte tränat tillräckligt mycket på bland annat databaser, API:er, TDD, Mockito och CI.
 
 När det är så många olika delar man inte har bra koll på så känns det övermäktigt och det blir bara stressigt.
-Det känns liksom för sent för att gå igenom saker i detalj när man redan har fått uppgiften. 
-Då hinner man inte bli klar i tid.
 
 Jag kände att jag bara ville få klart projektet snabbt och skicka in det, så att jag sedan i lugn och ro kunde gå tillbaka och gå igenom sådant som jag inte förstår.
 Men detta blir ju egentligen helt omvänd ordning...
 
+Jag ska som sagt repetera mycket under ledigheten och skriva egna anteckningar och lathundar till mig själv så att jag har ett slags "facit" för när jag är osäker på något.'
+Jag vet att detta är ett bra sätt för mig att lära mig saker men jag har liksom inte hunnit med det under denna kurs.
+
 ### Vad gick bra
 Det går bättre och bättre att skriva dokumentationen och README.md för varje projekt jag gör.
-Det är kul!
-Att skriva ut menyn i Menu-klassen gick hyfsat bra.
+Det är roligt!
+
+Att skriva ut menyn i Menu-klassen gick också bra.
 
 ### Vad gick dåligt
 Att förstå vilka metoder jag behövde testa, vilka som skulle mockas och hur jag skulle göra detta.
@@ -114,3 +129,4 @@ Jag hade även skrivit ut allt ifrån Menu-klassen istället för att skriva ut 
 ### Vilka möjligheter ser du med de kunskaper du fått under kursen.
 Jag kan nu skapa program med automatiska tester och CI. Detta gör att jag kan skapa säkrare program och det känns väldigt bra att kunna.
 Jag har även fått bättre förståelse för MongoDB och Mockito vilket känns bra.
+
