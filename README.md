@@ -41,11 +41,13 @@ When the application is run, the user is presented with a menu with the followin
 The user then uses the number keys to select an option and continues to follow the instructions in the console.
 
 ## Credits
-
+Received help from:
 * [Marcus](https://github.com/marcusjobb)
-* [Jafar](https://github.com/Jafar-Hussein)
 * [chatGPT](https://chat.openai.com/)
 * IntelliJ Copilot
+
+Project tested by:
+* [Jafar](https://github.com/Jafar-Hussein)
 
 ## Dependencies
 * [junit jupiter 5](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0)
